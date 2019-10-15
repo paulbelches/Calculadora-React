@@ -19,6 +19,9 @@
     "url": "https://github.com/paulbelches/Calculadora-React/issues"
   },
   "homepage": "https://github.com/paulbelches/Calculadora-React1#readme",
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  },
   "devDependencies": {
     "@babel/core": "^7.6.3",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
@@ -27,6 +30,9 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.0",
+    "enzyme-to-json": "^3.4.2",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-loader": "^3.0.2",
