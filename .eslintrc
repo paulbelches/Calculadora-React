@@ -7,6 +7,7 @@
     "rules": {
         "semi": ["error", "never"],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "import/extensions": [0,"always"]
+        "import/extensions": [0,"always"],
+        "react/prop-types": 0
     }
 }

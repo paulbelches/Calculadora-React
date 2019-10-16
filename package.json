@@ -20,7 +20,11 @@
   },
   "homepage": "https://github.com/paulbelches/Calculadora-React1#readme",
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupTestFrameworkScriptFile": "<rootDir>/test-setup.js",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.6.3",
@@ -31,7 +35,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.2",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
@@ -48,7 +52,9 @@
   "dependencies": {
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
+  
 }
