@@ -20,11 +20,10 @@ export default class App extends React.Component {
   check(v) {
     if (parseFloat(v) < 0 || parseFloat(v) > 999999999) {
       this.clear()
-      console.log(v)
       return 'Error'
     }
     if (String(v).length > 9) {
-      return v.substring(0, 8)
+      return v.substring(0, 9)
     }
     return v
   }
