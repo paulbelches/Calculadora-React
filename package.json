@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,11 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addon-notes": "^5.2.5",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -50,11 +57,11 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
+    "@storybook/addon-knobs": "^5.2.5",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
-  
 }
